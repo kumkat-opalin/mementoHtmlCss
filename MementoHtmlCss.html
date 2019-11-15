@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="memento.css" />
+        <title>Mémento HTML5 et CSS3</title>
+    </head>
+
+    <body>
+    <!-- Corps de la page -->
+    <h1 id=Haut>Les balises (titre de niveau 1)</h1>
+
+    <p>
+        La première des balises pour un fichier html est <strong><em>&lt;!DOCTYPE html&gt;</em></strong> qui indique que c'est un document HTML. C'est une balise orpheline.
+        <br />La 2ème indique le debut de la partie html :  <strong><em>&lt;html&gt;</em></strong> et se referme &lt;/html&gt;
+        <br />La 3ème indique le debut de la partie html :  <strong><em>&lt;head&gt; et se referme &lt;/head&gt;</em></strong>
+        <br />La 4ème indique le type d'alphabet utilisé, pour la France  :  <strong><em>&lt;meta charset="utf-8" /&gt;</em></strong>.  C'est une balise orpheline.
+        <br />La 5ème indique le fichier CSS utilisé pour le site  :  <strong><em>&lt;link rel="stylesheet" href="memento.css" /&gt;</em></strong>.  C'est une balise orpheline.
+        <br />La 6ème indique le titre de la page :  <strong><em>&lt;title&gt; et se referme &lt;/title&gt;</em></strong>. Attention, elle est importante pour le référencement du site.
+        <br />La 7ème indique le corp de la page html :  <strong><em>&lt;body&gt; et se referme &lt;/body&gt;</em></strong>
+    </p>
+
+    <h2>courantes (titre de niveau 2)</h2>
+    <p>Le titre principal se trouve entre les balises <strong><em>&lt;h1&gt; et &lt;/h1&gt;</em></strong>,
+    <br />les titres s'étagent entre <mark>h1 et h6</mark> et la police est proportionnelle. (de plus en plus petite)
+    <br />Un paragraphe avec les balises <strong><em>&lt;p&gt; et &lt;/p&gt;</em></strong> 
+    <br />Je vais à la ligne avec la balise <strong><em>&lt;br /&gt;</em></strong>
+    <br />Je signale un morceau de texte (mise en italique par défaut) avec les balises <strong><em>&lt;em&gt; et &lt;/em&gt;</em></strong>
+    <br />Je signale un morceau de texte comme IMPORTANT (mise en GRAS par défaut) avec les balises <strong><em>&lt;strong&gt; et &lt;/strong&gt;</em></strong>
+    <br />Je marque un morceau de texte (surlignage par défaut) avec les balises <strong><em>&lt;mark&gt; et &lt;/mark&gt;</em></strong>
+    </p>
+    <h2>les listes (titre de niveau 2)</h2>
+    <h3>non ordonnées (titre de niveau 3)</h3>
+    <ul>
+    	<li> se déclarent avec les balises  <strong><em>&lt;ul&gt; et &lt;/ul&gt;</em></strong></li>
+    	<li> les lignes evec  <strong><em>&lt;li&gt; et &lt;/li&gt;</em></strong></li>
+    </ul>
+    <h3>ordonnées (titre de niveau 3)</h3>
+    <ol>
+    	<li> se déclarent avec les balises  <strong><em>&lt;ol&gt; et &lt;/ol&gt;</em></strong></li>
+    	<li> les lignes evec  <strong><em>&lt;li&gt; et &lt;/li&gt;</em></strong></li>
+    </ol>
+    
+    <h2>les liens</h2>
+    se déclarent avec la balise  <strong><em>&lt;a&gt; et &lt;/a&gt;</em></strong></li>
+    <ol>
+    	<li> lien sur un site extérieur, à la place de ma page  <strong><em>&lt;a href="https://www.qwant.com"&gt;le moteur de recherche QWANT&lt;/a&gt;</em></strong>
+    	<br />exemple : <a href="https://www.qwant.com">le moteur de recherche QWANT</a></li>
+    	<li> lien sur un site extérieur, sur une nouvelle page  &lt;a href="https://www.qwant.com" <strong><em>target="_blank"</em></strong>&gt;le moteur de recherche QWANT&lt;/a&gt;
+    	<br />exemple : <a href="https://www.qwant.com" title="Enfin un moteur de recherche européen !!!"  target="_blank">le moteur de recherche QWANT</a></li>
+        <li> Avec une bulle d'aide en plus  &lt;a href="https://www.qwant.com" <strong><em>title="Enfin un moteur de recherche européen !!!"</em></strong> target="_blank"&gt;le moteur de recherche QWANT&lt;/a&gt;
+    	<br />exemple : <a href="https://www.qwant.com" title="Enfin un moteur de recherche européen !!!"  target="_blank">le moteur de recherche QWANT</a></li>
+    	<li> Une autre page sur le site <strong><em> &lt;a href="page2.html"&gt;la page 2&lt;/a&gt;</em></strong>
+        <br />exemple : <a href="page2.html" title="partie HTML5">la page 2</a></li>
+        <li> Une autre page sur le site dans un autre répertoire <strong><em> &lt;a href="./Css/page3.html"&gt;la page 3&lt;/a&gt;</em></strong>
+        <br />exemple : <a href="./Css/page3.html" title="partie CSS3">la page 3</a></li>
+        <li> Un e-mail <strong><em> &lt;a href="mailto:manu.fertier@gmail.com"&gt;Envoyez-moi un e-mail !&lt;/a&gt;</em></strong>
+        <br />exemple : <a href="mailto:manu.fertier@gmail.com">Envoyez-moi un e-mail !</a></li>
+        <li> Un e-mail <strong><em> &lt;a href="MementoHtmlCss.zip"&gt;Télécharger le fichier&lt;/a&gt;</em></strong>
+        <br />exemple : <a href="MementoHtmlCss.zip">Télécharger le fichier</a></li>
+    </ol>
+    
+    <h2>les liens avec des ancres</h2>
+
+    Il faut au préalable rajouter l'attribut <strong><em>id</em></strong> à une balise qui va servir de repère.
+    <br />On choisit par exemple le titre principal, et on lui attribue l'id Haut :
+    <br /><strong><em>&lt;h1 id=Haut&gt;Les balises (titre de niveau 1)&lt;/h1&gt;</em></strong>
+    <br /> <strong><em>&lt;a href="#Haut"&gt;Aller vers l'ancre Haut en début de document&lt;/a&gt;</strong></em>
+    <br /><a href="#Haut">Aller vers l'ancre Haut en début de document</a>
+    <p>Si l'ancre se situe sur une autre page, il suffit de mettre le nom de la page suivi de l'ancre.
+    <br /> <strong><em>&lt;a href="./page2.html#Haut"&gt;Aller vers l'ancre Haut en début du document page 2&lt;/a&gt;</strong></em>
+    <br />exemple : <a href="page2.html#Haut" title="partie HTML5">la page 2</a></li>    
+    </p>
+
+    <h2>les images</h2>
+
+    L'insertion d'une image se fait avec une balise de type orpheline comme &lt;br /&gt;. Attention! L'insertion d'un image se 
+    fait impérativement dans un paragraphe &lt;p&gt; &lt;/p&gt;.
+    <br /> src : chemin de l'image
+    <br /> alt : texte alternatif si l'image ne peut pas être affichée par le navigateur.
+    <br /> title : infobulle
+    <br /> href : permet l'utilisation d'une miniature pour ne pas pénaliser letemps de chargement de la page.
+    <br /> ce qui donne : <strong><em>&lt;p&gt; Cliquez sur l'image!&lt;br /&gt;
+           &lt;a href="Images/casc.jpg"&gt; &lt;img src="Images/casc10.jpg" alt="Photo de cascade" title="Cliquez pour agrandir" /&gt;&lt;/a&gt;&lt;/p&gt;</strong></em>
+    <p> Cliquez sur l'image!<br /> 
+        <a href="Images/casc.jpg"> <img src="Images/casc10.jpg" alt="Photo de cascade" title="Cliquez pour agrandir" /></a>
+    </p>
+
+    <h2>les figures</h2>
+
+    Les figures sont des éléments qui viennent enrichir le texte et qui ont du sens :
+
+    <ul>
+        <li>Images </li>
+        <li>Codes sources, mais pas de l'HTML :)) </li>
+        <li>Citations </li>
+        <li>Diagrammes </li>
+        <li>... </li>
+    </ul>
+
+    Elles peuvent se trouver dans un paragraphe ou en en dehors. Une figure peut comporter plusieurs éléments: images,...
+    <br />La balise figcaption permet de mettre un titre sous la figure.
+    <br /> ce qui donne : <strong><em> 
+    <br /> &lt;p&gt;Connaissez-vous le logiciel Sublime Text ? On peut faire des sites web avec !&lt;/p&gt;
+    <br /> &lt;figure&gt;
+    <br /> &lt;img src="Images/Code.png" alt="une capture d'écran" title="Un peu de code" /&gt;
+    <br /> &lt;img src="Images/Code2.png" alt="une capture d'écran" title="Un peu de code" /&gt;
+    <br /> &lt;figcaption&gt;Un peu de code !&lt;/figcaption&gt;
+    <br /> &lt;/figure&gt;
+    </strong></em>
+
+    <p>Connaissez-vous le logiciel Sublime Text ? On peut faire des sites web avec !</p>
+
+    <figure>
+    <img src="Images/Code.png" alt="une capture d'écran" title="Un peu de code" />
+    <img src="Images/Code2.png" alt="une capture d'écran" title="Un peu de code" />
+    <figcaption>Un peu de code !</figcaption>
+    </figure>
+
+    <h1 id=Haut>Le CSS</h1>
+    
+    <h2>Les points clefs</h2>
+    <p>
+        <ul>
+            <li>CSS = Cascading Style Sheets</li>
+            <li>Permet de mettre en forme la page html</li>
+            <li>Le site <a href="https://www.caniuse.com/" target="_blank">https://www.caniuse.com/</a> permet de vérifier si la technique est supportée par une version du navigateur.</li>
+            <li>On peut écrire le code CSS en 3 endroits :
+                <ol>
+                    <li> Dans un fichier (Méthode la plus recommandable)</li>
+                    <li> Au début du fichier HTML</li>
+                    <li>directement dans une balise</li>
+                </ol>
+                les 2 dernières méthodes ne sont utilisées que pour gérer des exceptions au niveau de la charte graphique du site.
+            </li>
+
+        </ul>    
+    </p>
+
+
+    </body>
+</html>
