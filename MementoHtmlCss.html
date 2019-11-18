@@ -11,7 +11,7 @@
     <!-- Corps de la page -->
     <h1 id=Haut>Les balises (titre de niveau 1)</h1>
 
-    <p>
+    <p class="important">
         La première des balises pour un fichier html est <strong><em>&lt;!DOCTYPE html&gt;</em></strong> qui indique que c'est un document HTML. C'est une balise orpheline.
         <br />La 2ème indique le debut de la partie html :  <strong><em>&lt;html&gt;</em></strong> et se referme &lt;/html&gt;
         <br />La 3ème indique le debut de la partie html :  <strong><em>&lt;head&gt; et se referme &lt;/head&gt;</em></strong>
@@ -46,15 +46,15 @@
     se déclarent avec la balise  <strong><em>&lt;a&gt; et &lt;/a&gt;</em></strong></li>
     <ol>
     	<li> lien sur un site extérieur, à la place de ma page  <strong><em>&lt;a href="https://www.qwant.com"&gt;le moteur de recherche QWANT&lt;/a&gt;</em></strong>
-    	<br />exemple : <a href="https://www.qwant.com">le moteur de recherche QWANT</a></li>
+    	<br /><span class="exemple"> exemple : </span><a href="https://www.qwant.com">le moteur de recherche QWANT</a></li>
     	<li> lien sur un site extérieur, sur une nouvelle page  &lt;a href="https://www.qwant.com" <strong><em>target="_blank"</em></strong>&gt;le moteur de recherche QWANT&lt;/a&gt;
-    	<br />exemple : <a href="https://www.qwant.com" title="Enfin un moteur de recherche européen !!!"  target="_blank">le moteur de recherche QWANT</a></li>
+    	<br /><span class="exemple">exemple : </span><a href="https://www.qwant.com" title="Enfin un moteur de recherche européen !!!"  target="_blank">le moteur de recherche QWANT</a></li>
         <li> Avec une bulle d'aide en plus  &lt;a href="https://www.qwant.com" <strong><em>title="Enfin un moteur de recherche européen !!!"</em></strong> target="_blank"&gt;le moteur de recherche QWANT&lt;/a&gt;
     	<br />exemple : <a href="https://www.qwant.com" title="Enfin un moteur de recherche européen !!!"  target="_blank">le moteur de recherche QWANT</a></li>
     	<li> Une autre page sur le site <strong><em> &lt;a href="page2.html"&gt;la page 2&lt;/a&gt;</em></strong>
-        <br />exemple : <a href="page2.html" title="partie HTML5">la page 2</a></li>
+        <br />exemple : <a href="Page2.html" title="partie HTML5">la page 2</a></li>
         <li> Une autre page sur le site dans un autre répertoire <strong><em> &lt;a href="./Css/page3.html"&gt;la page 3&lt;/a&gt;</em></strong>
-        <br />exemple : <a href="./Css/page3.html" title="partie CSS3">la page 3</a></li>
+        <br />exemple : <a href="./Css/Page3.html" title="partie CSS3">la page 3</a></li>
         <li> Un e-mail <strong><em> &lt;a href="mailto:manu.fertier@gmail.com"&gt;Envoyez-moi un e-mail !&lt;/a&gt;</em></strong>
         <br />exemple : <a href="mailto:manu.fertier@gmail.com">Envoyez-moi un e-mail !</a></li>
         <li> Un e-mail <strong><em> &lt;a href="MementoHtmlCss.zip"&gt;Télécharger le fichier&lt;/a&gt;</em></strong>
@@ -69,8 +69,8 @@
     <br /> <strong><em>&lt;a href="#Haut"&gt;Aller vers l'ancre Haut en début de document&lt;/a&gt;</strong></em>
     <br /><a href="#Haut">Aller vers l'ancre Haut en début de document</a>
     <p>Si l'ancre se situe sur une autre page, il suffit de mettre le nom de la page suivi de l'ancre.
-    <br /> <strong><em>&lt;a href="./page2.html#Haut"&gt;Aller vers l'ancre Haut en début du document page 2&lt;/a&gt;</strong></em>
-    <br />exemple : <a href="page2.html#Haut" title="partie HTML5">la page 2</a></li>    
+    <br /> <strong><em>&lt;a href="./Page2.html#Haut"&gt;Aller vers l'ancre Haut en début du document page 2&lt;/a&gt;</strong></em>
+    <br />exemple : <a href="./Page2.html#Haut" title="partie HTML5">la page 2</a></li>    
     </p>
 
     <h2>les images</h2>
@@ -84,7 +84,7 @@
     <br /> ce qui donne : <strong><em>&lt;p&gt; Cliquez sur l'image!&lt;br /&gt;
            &lt;a href="Images/casc.jpg"&gt; &lt;img src="Images/casc10.jpg" alt="Photo de cascade" title="Cliquez pour agrandir" /&gt;&lt;/a&gt;&lt;/p&gt;</strong></em>
     <p> Cliquez sur l'image!<br /> 
-        <a href="Images/casc.jpg"> <img src="Images/casc10.jpg" alt="Photo de cascade" title="Cliquez pour agrandir" /></a>
+        <a href="./Images/casc.jpg"> <img src="./Images/casc10.jpg" alt="Photo de cascade" title="Cliquez pour agrandir" /></a>
     </p>
 
     <h2>les figures</h2>
@@ -104,8 +104,8 @@
     <br /> ce qui donne : <strong><em> 
     <br /> &lt;p&gt;Connaissez-vous le logiciel Sublime Text ? On peut faire des sites web avec !&lt;/p&gt;
     <br /> &lt;figure&gt;
-    <br /> &lt;img src="Images/Code.png" alt="une capture d'écran" title="Un peu de code" /&gt;
-    <br /> &lt;img src="Images/Code2.png" alt="une capture d'écran" title="Un peu de code" /&gt;
+    <br /> &lt;img src="Images/Code.PNG" alt="une capture d'écran" title="Un peu de code" /&gt;
+    <br /> &lt;img src="Images/Code2.PNG" alt="une capture d'écran" title="Un peu de code" /&gt;
     <br /> &lt;figcaption&gt;Un peu de code !&lt;/figcaption&gt;
     <br /> &lt;/figure&gt;
     </strong></em>
@@ -113,16 +113,16 @@
     <p>Connaissez-vous le logiciel Sublime Text ? On peut faire des sites web avec !</p>
 
     <figure>
-    <img src="Images/Code.png" alt="une capture d'écran" title="Un peu de code" />
-    <img src="Images/Code2.png" alt="une capture d'écran" title="Un peu de code" />
+    <img src="Images/Code.PNG" alt="une capture d'écran" title="Un peu de code" />
+    <img src="Images/Code2.PNG" alt="une capture d'écran" title="Un peu de code" />
     <figcaption>Un peu de code !</figcaption>
     </figure>
 
     <h1 id=Haut>Le CSS</h1>
     
     <h2>Les points clefs</h2>
-    <p>
-        <ul>
+    <p >
+        <ul class="important">
             <li>CSS = Cascading Style Sheets</li>
             <li>Permet de mettre en forme la page html</li>
             <li>Le site <a href="https://www.caniuse.com/" target="_blank">https://www.caniuse.com/</a> permet de vérifier si la technique est supportée par une version du navigateur.</li>
@@ -142,16 +142,64 @@
 
     <h3>dans un fichier</h3>
     <figure>
-    <img src="Images/fichiercss.png" alt="le code dans le fichier" title="code css" />
+    <img src="./Images/fichiercss.PNG" alt="le code dans le fichier" title="code css" />
     
     <figcaption>Fichier CSS</figcaption>
     </figure>
 
     <h3>dans le head du fichier html</h3>
 
+    <figure>
+    <img src="./Images/entetecss.PNG" alt="le code dans le fichier" title="code css pour la page" />
+    
+    <figcaption>Code CSS pour la page</figcaption>
+    </figure>
+
     <h3>dans une balise</h3>
+    <p style="color: red;">comme ci-dessous</p>
+    
+     <figure>
+    <img src="./Images/balisecss.PNG" alt="le code dans le fichier" title="code css dans une balise" />
+    
+    <figcaption>Code CSS dans une balise</figcaption>
+    </figure>
 
+    <h2>Le code du CSS</h2>
 
+    le code du CSS se compose de 3 éléments :
+    <ol> 
+        
+        <li> de un ou plusieurs nom de <strong>balise</strong> séparés par une virgule suivi de 2 accolades</li>
+        <li> entre les accolades une ou plusieurs <strong>propriétés</strong> suivi de :</li>
+        <li> et après les : une <strong>valeur</strong></li>
 
+    </ol>
+    
+    ce qui donne shématiquement :
+    <br /> nom de la balise,nom de la balise,...
+    <br />{
+    <br /> propriété 1 : valeur
+    <br /> propriété 2 : valeur
+    <br /> propriété ...
+    <br />}
+
+    <br />
+
+    <br />Pour insérer un commentaire dans un fichier CSS, il faut le mettre entre /* et */
+
+    <h2>class et id</h2>
+
+    <p>Si on désire appliquer un style particulier à une balise dans notre HTML, on doit surcharger la balise avec un style dans le code HTML. 
+    <br /> <strong> Ce n'est la seule façon de faire et c'est même la moins bonne. </strong>
+    <br /> C'est ici que l'usage de la balise <strong>class</strong> s'impose 
+
+    </p>
+
+    
+
+    <br />
+    <br />
+
+ 
     </body>
 </html>

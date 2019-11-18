@@ -1,6 +1,18 @@
-p
+h1,h2,h3,h4,h5,h6
 {
-    color: blue;
+    color: #3E5840;
 }
 
+.exemple
+{
+	color: #3B6133;
+	font-style: italic;
 
+}
+
+.important
+{
+	font-size: 105%;
+	font-weight: : bold;
+	color: #077A15;
+}
