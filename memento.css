@@ -1,18 +1,45 @@
-h1,h2,h3,h4,h5,h6
+/* 
+    CSS - auteur Kum
+    Mémento HTML & CSS
+*/
+
+/* Structure de page */
+#haut
 {
-    color: #3E5840;
+	background      :  url(./Images/fdbois.jpg) repeat-x;;
+    height          : 47px;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 25px 25px;
+    
+
 }
 
-.exemple
+#bas
 {
-	color: #3B6133;
-	font-style: italic;
-
+    background      : #f0f0f0;
+    height          : 40px;
+    border-top      : 2px solid #dedede;
+    position        : fixed;
+    bottom          : 0;
+    right           : 0;
+    left            : 0;
+    text-align: center;
 }
 
-.important
+#titrefenetre
 {
-	font-size: 105%;
-	font-weight: : bold;
-	color: #077A15;
+	font-size: 16pt;
+	margin-top: 12px;
+	font-weight: bold;
+}
+
+/*Eléments*/
+p
+{
+    color: black;
 }
