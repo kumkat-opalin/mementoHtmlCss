@@ -1,0 +1,114 @@
+/* 
+    CSS - auteur Kum
+    Mémento HTML & CSS
+*/
+
+/* Structure de page */
+#haut
+{
+	background      :  url(../Images/fdbois.jpg) repeat-x;
+    height          : 47px;
+    position        : fixed;
+    top             : 0;
+    left            : 10px;
+    right           : 10px;
+    border: 2px solid #000;
+    border-radius: 25px 25px;
+    
+
+}
+
+#bas
+{
+    background      : #f0f0f0;
+    height          : 40px;
+    border-top      : 2px solid #dedede;
+    position        : fixed;
+    bottom          : 0;
+    right           : 0;
+    left            : 0;
+    text-align: center;
+}
+
+#gauche
+{
+    background      : #E5F9F7;
+    height          : 480px;
+    width           : 320px;
+    position        : fixed;
+    top             : 74px;
+    left            : 15px;
+    max-width: 316px;
+    overflow-wrap: break-word;
+    border: 2px solid #000;
+    border-radius: 25px 25px;
+    
+
+}
+
+#titrefenetre
+{
+	font-size: 24pt;
+	margin-top: 5px;
+	font-weight: bold;
+    text-align: center;
+}
+
+#corps
+{
+    background      : #A4BBF6;
+    top             : 70px;
+    left            : 350px;
+    width: 1500px;
+
+    position: relative;
+
+}
+
+/*Classes */
+
+.flottegauche
+{
+   float:  left; 
+   margin-top: 4px;
+   margin-left: 25px;
+}
+
+.centrer
+{
+   text-align: center; 
+}
+
+.menutitre
+{
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.menusoustitre
+{
+    font-size: 13pt;
+    font-weight: normal;
+}
+
+.menusoussoustitre
+{
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+/*Eléments*/
+p
+{
+    color: black;
+}
+
+h1
+{
+    font-size: 20pt;
+}
+
+ol
+{
+    margin-left: 5px;
+}

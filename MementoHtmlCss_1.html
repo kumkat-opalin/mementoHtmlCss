@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
     <!-- En-tête de la page -->
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="memento.css" />
+        <link rel="stylesheet" href="./Css/memento.css" />
         <title>Mémento HTML5 et CSS3</title>
     </head>
 
@@ -11,18 +11,80 @@
         
         <header id="haut">
             
-            <p id="titrefenetre"> Mémento HTML5 et CSS3</p>   
-            
+                <!-- <img src="./Images/kumquat.jpg" alt="logo">-->
+                <p class = "flottegauche"><img src="./Images/kumquat.jpg" alt="logo"></p>
+                <p id="titrefenetre"> Mémento HTML5 et CSS3 </p>   
             
         </header>
         
-                
-           
+        <nav id="gauche">
+            <h1 class="centrer"> Sommaire  </h1>
 
+            <ol type="I"  class="menutitre">
+                <li> le html5 </li>
+                    <ol class="menusoustitre">
+                        <li> l'entête </li>
+                        <li> le head </li>
+                        <li> le body</li>
+                            <ol type="a" class="menusoussoustitre">
+                            <li> les conteneurs sémantiques </li>
+                            <li> les conteneurs de texte </li>
+                            </ol>
+                    </ol> 
+                <br />    
+                <li> le css3</li> 
+                    <ol class="menusoustitre">
+                        <li> role et intégration </li>
+                        <li> les règles</li>   
+                    </ol> 
+                <br />     
+                <li> javascript</li>      
+            </ol>
+      
+        </nav>        
+         
+        <article id="corps">
+        <h1>Les balises (titre de niveau 1)</h1>
+
+        <p>
+        La première des balises pour un fichier html est <strong><em>&lt;!DOCTYPE html&gt;</em></strong> qui indique que c'est un document HTML. C'est une balise orpheline.
+        <br />La 2ème indique le debut de la partie html :  <strong><em>&lt;html&gt;</em></strong> et se referme &lt;/html&gt;
+        <br />La 3ème indique le debut de la partie html :  <strong><em>&lt;head&gt; et se referme &lt;/head&gt;</em></strong>
+        <br />La 4ème indique le type d'alphabet utilisé, pour la France  :  <strong><em>&lt;meta charset="utf-8" /&gt;</em></strong>.  C'est une balise orpheline.
+        <br />La 5ème indique le fichier CSS utilisé pour le site  :  <strong><em>&lt;link rel="stylesheet" href="memento.css" /&gt;</em></strong>.  C'est une balise orpheline.
+        <br />La 6ème indique le titre de la page :  <strong><em>&lt;title&gt; et se referme &lt;/title&gt;</em></strong>. Attention, elle est importante pour le référencement du site.
+        <br />La 7ème indique le corp de la page html :  <strong><em>&lt;body&gt; et se referme &lt;/body&gt;</em></strong>
+    </p>
+
+    <h2>courantes (titre de niveau 2)</h2>
+    <p>Le titre principal se trouve entre les balises <strong><em>&lt;h1&gt; et &lt;/h1&gt;</em></strong>,
+    <br />les titres s'étagent entre <mark>h1 et h6</mark> et la police est proportionnelle. (de plus en plus petite)
+    <br />Un paragraphe avec les balises <strong><em>&lt;p&gt; et &lt;/p&gt;</em></strong> 
+    <br />Je vais à la ligne avec la balise <strong><em>&lt;br /&gt;</em></strong>
+    <br />Je signale un morceau de texte (mise en italique par défaut) avec les balises <strong><em>&lt;em&gt; et &lt;/em&gt;</em></strong>
+    <br />Je signale un morceau de texte comme IMPORTANT (mise en GRAS par défaut) avec les balises <strong><em>&lt;strong&gt; et &lt;/strong&gt;</em></strong>
+    <br />Je marque un morceau de texte (surlignage par défaut) avec les balises <strong><em>&lt;mark&gt; et &lt;/mark&gt;</em></strong>
+    </p>
+    <h2>les listes (titre de niveau 2)</h2>
+    <h3>non ordonnées (titre de niveau 3)</h3>
+    <ul>
+        <li> se déclarent avec les balises  <strong><em>&lt;ul&gt; et &lt;/ul&gt;</em></strong></li>
+        <li> les lignes evec  <strong><em>&lt;li&gt; et &lt;/li&gt;</em></strong></li>
+    </ul>
+    <h3>ordonnées (titre de niveau 3)</h3>
+    <ol>
+        <li> se déclarent avec les balises  <strong><em>&lt;ol&gt; et &lt;/ol&gt;</em></strong></li>
+        <li> les lignes evec  <strong><em>&lt;li&gt; et &lt;/li&gt;</em></strong></li>
+    </ol>
+    
+    <h2>les liens</h2>    
+
+        </article>
         
-        <div id="bas">
+        
+        <footer id="bas">
             <p> kum</p>
          
-        </div>
+        </footer>
     </body>
 </html>
